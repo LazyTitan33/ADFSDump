@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADFSDump", "ADFSDump\ADFSDump.csproj", "{9EE27D63-6AC9-4037-860B-44E91BAE7F0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADumpFS", "ADumpFS\ADumpFS.csproj", "{9EE27D63-6AC9-4037-860B-44E91BAE7F0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,8 +7,8 @@
     <ProjectGuid>{9EE27D63-6AC9-4037-860B-44E91BAE7F0D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ADFSDump</RootNamespace>
-    <AssemblyName>ADFSDump</AssemblyName>
+    <RootNamespace>ADumpFS</RootNamespace>
+    <AssemblyName>ADumpFS</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -49,7 +49,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ADFSDump.Program</StartupObject>
+    <StartupObject>ADumpFS.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

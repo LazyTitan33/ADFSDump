@@ -6,9 +6,9 @@ using System.Xml;
 using System.Security;
 using System.Security.Principal;
 using System.Runtime.InteropServices;
-using ADFSDump.RelyingPartyTrust;
+using ADumpFS.RelyingPartyTrust;
 
-namespace ADFSDump.ReadDB
+namespace ADumpFS.ReadDB
 {
     internal static class NativeMethods
     {

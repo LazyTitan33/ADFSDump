@@ -1,4 +1,4 @@
-# ADFSDump
+# ADumpFS
 
 A C# tool to dump all sorts of goodies from AD FS.
 
@@ -8,13 +8,13 @@ This tool is designed to be run in conjunction with ADFSpoof. ADFSdump will outp
 
 ## Detailed Description
 
-ADFSDump is a tool that will read information from Active Directory and from the AD FS Configuration Database that is needed to generate forged security tokens. This information can then be fed into ADFSpoof to generate those tokens. 
+ADumpFS is a tool that will read information from Active Directory and from the AD FS Configuration Database that is needed to generate forged security tokens. This information can then be fed into ADFSpoof to generate those tokens. 
 
 ### Requirements
 
-* ADFSDump must be run under the user context of the AD FS service account. You can get this information by running a process listing on the AD FS server or from the output of the `Get-ADFSProperties` cmdlet. Only the AD FS service account has the permissions needed to access the configuration database. Not even a DA can access this.
-* ADFSDump assumes that the service is configured to use the Windows Internal Database (WID). Although it would be trivial to support an external SQL server, this feature does not exist right now.
-* ADFSDump must be run locally on an AD FS server, NOT an AD FS web application proxy. The WID can only be accessed locally via a named pipe.
+* ADumpFS must be run under the user context of the AD FS service account. You can get this information by running a process listing on the AD FS server or from the output of the `Get-ADFSProperties` cmdlet. Only the AD FS service account has the permissions needed to access the configuration database. Not even a DA can access this.
+* ADumpFS assumes that the service is configured to use the Windows Internal Database (WID). Although it would be trivial to support an external SQL server, this feature does not exist right now.
+* ADumpFS must be run locally on an AD FS server, NOT an AD FS web application proxy. The WID can only be accessed locally via a named pipe.
 
 ### What this tool will do
 
@@ -36,10 +36,10 @@ ADFSDump is a tool that will read information from Active Directory and from the
 
 A compiled version will not be released. You'll have to compile it yourself!
 
- ADFSDump was built against .NET 4.5 with Visual Studio 2017 Community Edition. Simply open up the project .sln, choose "Release", and build.
+ ADumpFS was built against .NET 4.5 with Visual Studio 2017 Community Edition. Simply open up the project .sln, choose "Release", and build.
 
 ### Targeting Other .NET Versions
 
-ADFSDump's default build configuration is for .NET 4.5, which will fail on systems without that version installed. To target ADFSDump for .NET 4 or 3.5, open the .sln solution, go to Project -> ADFSDump Properties and change the "Target framework" to another version.
+ADumpFS's default build configuration is for .NET 4.5, which will fail on systems without that version installed. To target ADumpFS for .NET 4 or 3.5, open the .sln solution, go to Project -> ADumpFS Properties and change the "Target framework" to another version.
 
 Note that AD FS requires .NET framework 4.5, so I'm not sure why you need to use a different version anyway :wink:

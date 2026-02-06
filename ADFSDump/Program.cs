@@ -1,11 +1,11 @@
 ﻿using System;
-using ADFSDump.ReadDB;
+using ADumpFS.ReadDB;
 using System.Collections.Generic;
-using ADFSDump.RelyingPartyTrust;
-using ADFSDump.About;
-using ADFSDump.ActiveDirectory;
+using ADumpFS.RelyingPartyTrust;
+using ADumpFS.About;
+using ADumpFS.ActiveDirectory;
 
-namespace ADFSDump
+namespace ADumpFS
 {
     
     class Program

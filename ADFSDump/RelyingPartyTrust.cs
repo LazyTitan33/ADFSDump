@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ADFSDump.RelyingPartyTrust
+namespace ADumpFS.RelyingPartyTrust
 {
     public enum PolicyType
     {

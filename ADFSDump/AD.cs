@@ -4,7 +4,7 @@ using System.DirectoryServices;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ADFSDump.ActiveDirectory
+namespace ADumpFS.ActiveDirectory
 {
     public static class ADSearcher
     {
