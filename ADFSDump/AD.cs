@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.DirectoryServices;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ namespace ADFSDump.ActiveDirectory
 
         public static void GetPrivKey(Dictionary<string,string> arguments)
         {
-            string username = "";
+            string user = "";
             string password = "";
             string domain = "";
             string server = "";
@@ -25,17 +25,17 @@ namespace ADFSDump.ActiveDirectory
                 domain = System.DirectoryServices.ActiveDirectory.Domain.GetCurrentDomain().Name;
                 searchString = "LDAP://";
             }
-            if(arguments.ContainsKey("/username"))
+            if(arguments.ContainsKey("/user"))
             {
                 if(arguments.ContainsKey("/password"))
                 {
-                    username = arguments["/username"];
+                    user = arguments["/user"];
                     password = arguments["/password"];
                     runAsUser = true;
                 }
                 else
                 {
-                    Console.WriteLine("[!] If you provide a username, you must provide a password!");
+                    Console.WriteLine("[!] If you provide a user, you must provide a password!");
                     Environment.Exit(0);
                 }
             }
@@ -71,7 +71,7 @@ namespace ADFSDump.ActiveDirectory
                 DirectoryEntry entry = new DirectoryEntry();
                 if (runAsUser)
                 {
-                     entry = new DirectoryEntry(ldap, username, password);
+                     entry = new DirectoryEntry(ldap, user, password);
                 }
                 else
                 {
